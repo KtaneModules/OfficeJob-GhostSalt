@@ -23,4 +23,4 @@ MonoBehaviour:
     and, defying all odds, this has tp support'
   version: 1.0
   outputFolder: build
-  previewImage: {fileID: 0}
+  previewImage: {fileID: 2800000, guid: b5009045db9788d4aa44a221f466ba8c, type: 3}

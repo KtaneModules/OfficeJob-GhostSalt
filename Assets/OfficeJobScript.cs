@@ -158,7 +158,8 @@ public class OfficeJobScript : MonoBehaviour
                     {
                         OffendingKeys.Add(key);
                         Audio.PlaySoundAtTransform("wrong", transform);
-                        Module.SetNeedyTimeRemaining(Mathf.Max(Module.GetNeedyTimeRemaining() - (TPActive ? TimeRemovedTP : TimeRemoved), 0));
+                        if (Module.GetNeedyTimeRemaining() > 0.5f)
+                            Module.SetNeedyTimeRemaining(Mathf.Max(Module.GetNeedyTimeRemaining() - (TPActive ? TimeRemovedTP : TimeRemoved), 0.5f));
                     }
                 }
                 else
